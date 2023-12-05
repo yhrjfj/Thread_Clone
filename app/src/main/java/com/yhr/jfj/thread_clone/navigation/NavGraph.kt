@@ -13,7 +13,7 @@ import com.yhr.jfj.thread_clone.screens.Splash
 
 @Composable
 // This function sets up the navigation graph for the application
-fun NavGraph(navController: NavHostController){
+fun NavGraph(navController: NavHostController) {
 
     // NavHost is a container for composable destinations in your app
     NavHost(
@@ -21,12 +21,12 @@ fun NavGraph(navController: NavHostController){
         navController = navController,
         // startDestination is the route for the first screen to show when launching the app
         startDestination = Routes.Splash.routes
-    ){
+    ) {
         // composable function is used to create a destination in the navigation graph
         composable(
             // Routes.Splash.routes is the route for the Splash screen
             Routes.Splash.routes
-        ){
+        ) {
             // This is the composable function for the Splash screen
             Splash()
         }
@@ -34,7 +34,7 @@ fun NavGraph(navController: NavHostController){
         composable(
             // Routes.Home.routes is the route for the Home screen
             Routes.Home.routes
-        ){
+        ) {
             // This is the composable function for the Home screen
             Home()
         }
@@ -42,7 +42,7 @@ fun NavGraph(navController: NavHostController){
         composable(
             // Routes.Notification.routes is the route for the Notification screen
             Routes.Notification.routes
-        ){
+        ) {
             // This is the composable function for the Notification screen
             Notification()
         }
@@ -50,7 +50,7 @@ fun NavGraph(navController: NavHostController){
         composable(
             // Routes.Search.routes is the route for the Search screen
             Routes.Search.routes
-        ){
+        ) {
             // This is the composable function for the Search screen
             Search()
         }
@@ -58,7 +58,7 @@ fun NavGraph(navController: NavHostController){
         composable(
             // Routes.AddThreads.routes is the route for the AddThreads screen
             Routes.AddThreads.routes
-        ){
+        ) {
             // This is the composable function for the AddThreads screen
             AddThreads()
         }
@@ -66,7 +66,7 @@ fun NavGraph(navController: NavHostController){
         composable(
             // Routes.Profile.routes is the route for the Profile screen
             Routes.Profile.routes
-        ){
+        ) {
             // This is the composable function for the Profile screen
             Profile()
         }
